@@ -1,0 +1,17 @@
+from flask import render_template, request
+
+from bard import BardImageModel
+
+# Get the instance of the BardImageModel.
+image_model = BardImageModel()
+
+# Get the search query from the request.
+search_query = request.args.get('query')
+
+# Get the image URL from the BardImageModel.
+image_url = image_model.get_image("cat")
+
+
+api_key = 'AIzaSyAZsk2gTGnDfIpU_YqhPij-h7pvZuwuTFM'
+        search_engine_id = 'https://cse.google.com/cse.js?cx=c2207e8e37d8542b0'
+

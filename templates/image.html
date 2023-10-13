@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Result</title>
+</head>
+<body>
+    <h1>Image Result</h1>
+    
+    {% if image_url %}
+        <img src="{{ image_url }}" alt="Image">
+    {% else %}
+        <p>No image found for the given query.</p>
+    {% endif %}
+    
+    <a href="/">Back to Home</a>
+</body>
+</html>
